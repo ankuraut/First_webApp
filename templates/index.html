@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My First Web App</title>
+  </head>
+  <body>
+    <h1>This is Django</h1>
+    {{key101}}
+    <br><br>
+    {{key102}}
+    <br><br>
+    <a href="{% url 'result' %}">click here for result</a>
+    <br><br>
+    <form action="{% url 'result' %}">
+      {% csrf_token %}
+      <textarea name="article" rows="10" cols="30"></textarea>
+      <input type="submit" name="" value="submit">
+    </form>
+  </body>
+</html>
+
+<input type="text" name="age1" value="" placeholder="Enter ur age">
+<br><br>
+<input type="text" name="name1" value="" placeholder="Enter ur name">
